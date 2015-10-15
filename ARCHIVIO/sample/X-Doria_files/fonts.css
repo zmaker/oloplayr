@@ -1,0 +1,166 @@
+/*	--------------------------------------------------
+
+	! Type Chapters
+	
+	# Top Level
+	# Headers
+	# Global Styles
+		
+	-------------------------------------------------- */
+/*	--------------------------------------------------
+	! Top Level	
+	-------------------------------------------------- */
+body {
+  background: #fff;
+  font-family: "proxima-nova-n1", "proxima-nova", sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  color: #555;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+/*	--------------------------------------------------
+	! Headers	
+	-------------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1em;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+.huge, h1 {
+  font-size: 6em;
+  margin-bottom: 12px;
+}
+.large, h2 {
+  font-size: 4.1em;
+  margin-bottom: 9px;
+  color: #383838;
+}
+.bigger, h3 {
+  font-size: 2.33em;
+  margin-bottom: 9px;
+  color: #383838;
+}
+.big, h4 {
+  font-size: 1.26em;
+  margin-bottom: 3px;
+  color: #f9f9f9;
+}
+h5 {
+  font-size: 1.41em;
+  margin-bottom: 3px;
+  line-height: 1.4em;
+  color: #383838;
+}
+h6 {
+  font-size: 1.25em;
+  font-weight: normal;
+}
+.small, small {
+  font-size: 13px;
+  line-height: 18px;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small {
+  color: #777;
+}
+.subheader {
+  color: #777;
+  font-weight: 300;
+  margin-bottom: 24px;
+}
+p {
+  margin: 0 0 18px;
+}
+p img {
+  margin: 0;
+}
+p.lead {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 24px;
+}
+/* Mobile */
+@media handheld, only screen and (max-width: 767px) {
+  body, p {
+    font-size: 15px;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+}
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+/*	Blockquotes  */
+blockquote, blockquote p {
+  line-height: 20px;
+  color: #777;
+}
+blockquote {
+  margin: 0 0 18px;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #ddd;
+}
+blockquote cite {
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  color: #555;
+}
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+blockquote cite a, blockquote cite a:visited {
+  color: #555;
+}
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 12px 0 18px;
+  height: 0;
+}
+abbr, acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #222;
+  border-bottom: 1px solid #ddd;
+  cursor: help;
+}
+abbr {
+  text-transform: none;
+}
+/*	--------------------------------------------------
+	! Global Styles	
+	-------------------------------------------------- */#product-nav a {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+#user-nav a {
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>HTML5 Full-Screen Demonstration</title>
+<style>
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body
+{
+	height: 100%;
+	font-family: "Segoe UI", arial, helvetica, freesans, sans-serif;
+	color: #333;
+	background-color: #fff;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 10px;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+figure {
+	position: relative;
+	display: block;
+	width: 30%;
+	float: right;
+	padding: 0;
+	margin: 1em;
+	cursor: pointer;
+}
+
+figure img {
+	display: block;
+	max-width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	cursor: pointer;
+}
+
+figure:-moz-full-screen img {
+	position: fixed;
+}
+
+figure:-ms-fullscreen {
+	width: auto;
+}
+
+figure:-ms-fullscreen img {
+	position: fixed;
+}
+
+figure:fullscreen img {
+	position: fixed;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>HTML5 Full-Screen Demonstration</h1>
+</header>
+
+<article>
+
+<figure id="myimage">
+<img src="squirrel.jpg" alt="a squirrel" />
+</figure>
+
+</article>
+
+<script>
+
+
+// full-screen available?
+if (
+	document.fullscreenEnabled || 
+	document.webkitFullscreenEnabled || 
+	document.mozFullScreenEnabled ||
+	document.msFullscreenEnabled
+) {
+
+	// image container
+	var i = document.getElementById("myimage");
+	
+	// click event handler
+	i.onclick = function() {
+	
+		// in full-screen?
+		if (
+			document.fullscreenElement ||
+			document.webkitFullscreenElement ||
+			document.mozFullScreenElement ||
+			document.msFullscreenElement
+		) {
+
+			// exit full-screen
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+			} else if (document.webkitExitFullscreen) {
+				document.webkitExitFullscreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.msExitFullscreen) {
+				document.msExitFullscreen();
+			}
+		
+		}
+		else {
+		
+			// go full-screen
+			if (i.requestFullscreen) {
+				this.requestFullscreen();
+			} else if (i.webkitRequestFullscreen) {
+				i.webkitRequestFullscreen();
+			} else if (i.mozRequestFullScreen) {
+				i.mozRequestFullScreen();
+			} else if (i.msRequestFullscreen) {
+				i.msRequestFullscreen();
+			}
+		
+		}
+	
+	}
+
+}
+</script>
+
+</body>
+</html>
