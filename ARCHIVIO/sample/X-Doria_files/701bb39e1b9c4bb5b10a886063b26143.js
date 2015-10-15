@@ -1,1 +1,0 @@
-b1Ctn.parseResponse({"conversion_tags":[],"universal_tags":[{"url":"https://insight.adsrvr.org/track/evnt/?adv=mp74px5&ct=0:r6i2g6hb&fmt=3","type":"img"},{"url":"https://pixel.mathtag.com/event/img?mt_id=421743&mt_adid=120163&v1=&v2=&v3=&s1=&s2=&s3=","type":"img"}]});

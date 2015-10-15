@@ -1,1 +1,0 @@
-document.write('<scr'+'ipt type="text/javascript" src="https://js.b1js.com/tagcontainer.js?id=701bb39e1b9c4bb5b10a886063b26143&type=1"></scr'+'ipt>');document.write('<scr' + 'ipt src="http://cdn.adnxs.com/ib/async_usersync.js"></scr'+'ipt>');
