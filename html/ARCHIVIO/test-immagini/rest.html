@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <title>Play.R | Management</title>
+    <script src="http://raspberrypi.local/js/jquery.min.js"></script>
+  
+	<script>
+	$(document).ready( function() {
+		$( "#bt1" ).click(function() {
+			callws();
+		});
+		$( "#btc" ).click(function() {
+			$('.greeting-id').empty();
+			$('.greeting-id').append("The ID is:");
+			$('.greeting-content').empty();
+			$('.greeting-content').append("The content is: ");
+		});
+	});
+	
+	function callws() {
+    $.ajax({
+        url: "http://raspberrypi.local/rest/"
+		}).then(function(data) {
+		$('.greeting-id').append(data.one);
+		$('.greeting-content').append(data.one);
+		});
+	}
+
+/*
+
+$( "#bt1" ).click(function() {
+		//
+	});
+
+	$( "#btc" ).click(function() {
+		
+	});
+	*/
+	
+	
+	/*
+	
+	*/
+	</script>
+</head>
+<body>
+	 <div>
+			<div id="bt1" style = "border: 1px solid blue; width: 200px; ">Click here</div> 
+			<br>
+			<div id="btc" style = "border: 1px solid red; width: 200px; ">Clear</div>
+            <p class="greeting-id">The ID is </p>
+            <p class="greeting-content">The content is </p>
+        </div>
+        
+        
+</body>
